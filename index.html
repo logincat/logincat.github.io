@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="stylesheet" href="/css/app.css">
-  
+  <link rel="stylesheet" href="/css/style.css" />
   
 </head>
   <style type="text/css">
@@ -90,12 +90,21 @@
     </a>
   </p>
 </footer>
+<div class="waifu">
+    <div class="waifu-tips"></div>
+    <canvas id="live2d" width="280" height="570" class="live2d"></canvas>
+</div>
 <canvas class="fireworks" style="position: fixed; left: 0px; top: 0px; z-index: 2147483647; pointer-events: none; width: 1366px; height: 150px;" width="2732" height="300"></canvas>
 <script type="text/javascript" src="/js/jq.js"></script>
 <script type="text/javascript" src="/js/shubiaotexiao.js"></script>
 <script src="/js/app.js"></script>
 <script src="/js/mousemove.js"></script>
 <script src="/js/musicloop.js"></script>
-
+<script type="text/javascript" src="live2d.js"></script>
+<script type="text/javascript" src="mouseplay.js"></script>
+<script type="text/javascript" src="waifu-tips.js"></script>
+<script type="text/javascript">
+    loadlive2d("live2d", "/model/model.json");
+</script>
 </body>
 </html>
